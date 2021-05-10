@@ -7,12 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint src --max-warnings=0",
-    "test": "jest"
-  },
-  "lint-staged": {
-    "src/**/*": [
-      "yarn lint --fix"
-    ]
+    "test": "jest",
+    "test:watch": "yarn test --watch --findRelatedTests"
   },
   "dependencies": {
     "next": "10.2.0",
@@ -21,6 +17,8 @@
   },
   "devDependencies": {
     "@babel/preset-typescript": "^7.13.0",
+    "@testing-library/jest-dom": "^5.12.0",
+    "@testing-library/react": "^11.2.6",
     "@types/babel__core": "^7.1.14",
     "@types/jest": "^26.0.23",
     "@types/react": "^17.0.5",
