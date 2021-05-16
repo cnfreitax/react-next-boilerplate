@@ -12,7 +12,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   html, body, #__next {
-    height: 300%
+    height: 100%
   }
 
   body {
